@@ -23,16 +23,19 @@ cd unleash-flask-recommendation
 
 ### 2. Set up requirements
 
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ### 3. Set up Unleash
 
+```bash
 git clone https://github.com/Unleash/unleash.git
 cd unleash
 docker compose up -d
-
+```
 
 ### 4. Create flag
 
@@ -40,6 +43,8 @@ Access the Unleash dashboard and create the flag
 
 ### 5. Run the Application
 
+```bash
 python app.py
 python simulate_requests.py
+```
 
